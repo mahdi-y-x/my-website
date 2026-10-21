@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('Caveat[wght].ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-size: 25px;
+    color: #000;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    max-width: 90vw;
+    height: auto;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+img:hover {
+    filter: blur(5px);
+}
+
+.navbar {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.25s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+}
+
+/* صفحه About */
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30vh 24px 40px;
+    background-color: #ffffff;
+}
+
+.about-content {
+    width: min(100%, 600px);
+    font-family: 'Dancing Script', cursive;
+    color: #000;
+    text-align: left;
+}
+
+.about-content h1 {
+    margin-bottom: 16px;
+    font-size: 36px;
+}
+
+.about-content p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+
+/* صفحه Contact */
+.contact-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 30vh 24px 40px;
+    background-color: #ffffff;
+}
+
+.contact-container a {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.25s ease;
+}
+
+.contact-container a:hover {
+    transform: scale(1.1);
+}
